@@ -92,6 +92,35 @@
             width: auto;
         }
 
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: var(--space-lg);
+        }
+
+        .google-rating {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--daisy-teal);
+        }
+
+        .nav-phone {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            text-decoration: none;
+            color: var(--daisy-teal);
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        .nav-phone:hover {
+            color: var(--daisy-aqua);
+        }
+
         nav a {
             text-decoration: none;
             color: var(--dark-gray);
@@ -102,6 +131,30 @@
 
         nav a:hover {
             color: var(--daisy-teal);
+        }
+
+        /* Sticky Mobile CTA */
+        .sticky-cta {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(135deg, var(--daisy-aqua) 0%, var(--daisy-mint) 100%);
+            color: var(--white);
+            text-align: center;
+            padding: 16px 24px;
+            font-size: 1rem;
+            font-weight: 600;
+            text-decoration: none;
+            z-index: 1000;
+            box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.15);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .sticky-cta:hover {
+            background: linear-gradient(135deg, var(--daisy-mint) 0%, var(--daisy-aqua) 100%);
         }
 
         .hero {
@@ -143,7 +196,7 @@
         }
 
         .hero h1 {
-            font-size: 1.5rem;
+            font-size: 2.8rem;
             font-weight: 700;
             line-height: 1.2;
             margin-bottom: var(--space-lg);
@@ -666,6 +719,22 @@
                 height: 38px;
             }
 
+            .google-rating {
+                display: none;
+            }
+
+            .nav-phone {
+                display: none;
+            }
+
+            .sticky-cta {
+                display: block;
+            }
+
+            body {
+                padding-bottom: 60px;
+            }
+
             .hero {
                 padding: var(--space-3xl) var(--space-lg);
                 min-height: auto;
@@ -781,14 +850,18 @@
     <nav>
         <div class="logo-section">
             <img src="public/images/daisy-logo.png" alt="Daisy MD Care Logo">
+            <span class="google-rating">⭐ 4.8 Google Rating</span>
         </div>
-        <a href="#contact">Contact</a>
+        <div class="nav-right">
+            <a href="tel:+1-877-877-3030" class="nav-phone"><i class="fas fa-phone"></i> (877) 877-3030</a>
+            <a href="#contact">Contact</a>
+        </div>
     </nav>
 
     <section class="hero">
         <div class="hero-content">
-            <h1>Skin & Acne Clinic in Santa Ana | Solution for Breakouts & Dark Spots</h1>
-            <p class="hero-subheading">Professional treatment to clear your skin and eliminate dark spots. Visible results in 2 weeks without harsh medications.</p>
+            <h1>Finally Clear Your Acne & Dark Spots - Visible Results in 2 Weeks</h1>
+            <p class="hero-subheading">Professional treatment to clear your skin and eliminate dark spots. See improvement in 2 weeks guaranteed.</p>
             <p class="hero-note" style="font-size: 1.1rem; font-weight: 600; margin-bottom: 24px;">Same-Day Appointments Available! | Se habla español.</p>
 
             <div class="hero-cta-group">
@@ -796,7 +869,7 @@
                     <a href="https://www.daisymdcare.com/booking-santa-ana" class="hero-cta">Book Free Consultation</a>
                     <a href="tel:+1-877-877-3030" class="hero-cta hero-cta-secondary"><i class="fas fa-phone"></i> Call Now: (877) 877-3030</a>
                 </div>
-                <p class="hero-note">Struggling with persistent acne or skin marks? In your free consultation, we'll evaluate your pigmentation and breakouts to design a plan that clears your face fast—without harsh pills.</p>
+                <p class="hero-note">Struggling with persistent acne or skin marks? In your free consultation, we'll evaluate your pigmentation and breakouts to design a plan that clears your face fast, without harsh pills.</p>
             </div>
         </div>
     </section>
@@ -1076,9 +1149,12 @@
 
             if (!isActive) {
                 answer.classList.add('active');
-                element.querySelector('span:last-child').textContent = '−';
+                element.querySelector('span:last-child').textContent = '-';
             }
         }
     </script>
+
+    <!-- Sticky Mobile CTA -->
+    <a href="https://www.daisymdcare.com/booking-santa-ana" class="sticky-cta">Book Free Consultation</a>
 </body>
 </html>
