@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clinical Acne Treatment in Santa Ana CA | Daisy MD Care - Professional Skincare</title>
-    <meta name="description" content="Expert facial treatment in Santa Ana, California. Over 40 years transforming adult skin. Visible results without harsh medications. Se habla español. Free consultation.">
+    <meta name="description" content="Expert facial treatment in Santa Ana, California. Over 40 years transforming adult skin. Visible results in 2 weeks guaranteed or money back. Se habla español. Free consultation.">
     <link rel="icon" href="public/Logo/Daisy Logo Transparent Background.png" type="image/png">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css">
 
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -17,6 +16,22 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-KQK9GDDJ');</script>
     <!-- End Google Tag Manager -->
+
+    <!-- Meta Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1623449681952157');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1623449681952157&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
 
     <style>
         * {
@@ -56,6 +71,7 @@
             background: var(--white);
         }
 
+        /* ============ NAV ============ */
         nav {
             background: var(--white);
             padding: var(--space-md) var(--space-xl);
@@ -79,19 +95,30 @@
             width: auto;
         }
 
-        .nav-right {
-            display: flex;
-            align-items: center;
-            gap: var(--space-lg);
-        }
-
         .google-rating {
             display: flex;
             align-items: center;
             gap: 6px;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             font-weight: 600;
             color: var(--daisy-teal);
+            text-decoration: none;
+            white-space: nowrap;
+        }
+
+        .google-rating:hover {
+            color: var(--daisy-aqua);
+        }
+
+        .google-stars {
+            color: #ffc107;
+            letter-spacing: -1px;
+        }
+
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: var(--space-lg);
         }
 
         .nav-phone {
@@ -120,7 +147,7 @@
             color: var(--daisy-teal);
         }
 
-        /* Sticky Mobile CTA */
+        /* ============ STICKY MOBILE CTA ============ */
         .sticky-cta {
             display: none;
             position: fixed;
@@ -144,13 +171,13 @@
             background: linear-gradient(135deg, var(--gold-dark) 0%, var(--gold) 100%);
         }
 
+        /* ============ HERO ============ */
         .hero {
             background-image:
-                linear-gradient(135deg, rgba(5, 31, 42, 0.65) 0%, rgba(14, 58, 71, 0.6) 50%, rgba(14, 58, 71, 0.7) 100%),
+                linear-gradient(135deg, rgba(5, 31, 42, 0.72) 0%, rgba(14, 58, 71, 0.68) 50%, rgba(14, 58, 71, 0.75) 100%),
                 url('public/images/hero-background.jpg');
             background-size: cover;
             background-position: center;
-            background-attachment: fixed;
             color: var(--white);
             padding: var(--space-4xl) var(--space-xl);
             text-align: center;
@@ -164,18 +191,6 @@
             overflow: hidden;
         }
 
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: radial-gradient(circle at 20% 50%, rgba(109, 209, 202, 0.15) 0%, transparent 50%),
-                        radial-gradient(circle at 80% 80%, rgba(71, 163, 194, 0.12) 0%, transparent 50%);
-            pointer-events: none;
-        }
-
         .hero-content {
             position: relative;
             z-index: 1;
@@ -187,17 +202,25 @@
             font-weight: 700;
             line-height: 1.2;
             margin-bottom: var(--space-lg);
-            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
         }
 
         .hero-subheading {
             font-size: 1.25rem;
             font-weight: 400;
             max-width: 700px;
-            margin-bottom: var(--space-2xl);
+            margin-bottom: var(--space-md);
             line-height: 1.7;
             margin-left: auto;
             margin-right: auto;
+        }
+
+        .hero-guarantee {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--gold-light);
+            margin-bottom: var(--space-2xl);
+            letter-spacing: 0.3px;
         }
 
         .hero-cta-group {
@@ -249,6 +272,7 @@
             margin-right: auto;
         }
 
+        /* ============ BEFORE/AFTER GALLERY ============ */
         .before-after-gallery {
             background: var(--light-bg);
             padding: var(--space-4xl) var(--space-xl);
@@ -308,20 +332,20 @@
             font-size: 0.95rem;
         }
 
-        /* Why Us Section */
-        .why-us-section {
+        /* ============ PROOF TIMELINE ============ */
+        .proof-timeline-section {
             background: var(--white);
             padding: var(--space-4xl) var(--space-xl);
         }
 
-        .why-us-section h2 {
+        .proof-timeline-section h2 {
             font-size: 2.2rem;
             color: var(--daisy-teal);
             text-align: center;
-            margin-bottom: var(--space-lg);
+            margin-bottom: var(--space-sm);
         }
 
-        .why-us-subtitle {
+        .proof-subtitle {
             text-align: center;
             color: var(--dark-gray);
             margin-bottom: var(--space-3xl);
@@ -331,423 +355,131 @@
             margin-right: auto;
         }
 
-        .why-us-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: var(--space-xl);
-            max-width: 1100px;
+        .proof-case-study {
+            max-width: 900px;
             margin: 0 auto;
         }
 
-        .why-us-item {
-            display: flex;
-            align-items: flex-start;
-            gap: var(--space-md);
-            padding: var(--space-lg);
-            background: var(--light-bg);
-            border-radius: 8px;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-
-        .why-us-item:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-        }
-
-        .why-us-icon {
-            font-size: 2rem;
-            color: var(--gold);
-            flex-shrink: 0;
-        }
-
-        .why-us-content h3 {
-            font-size: 1.1rem;
-            color: var(--daisy-teal);
-            margin-bottom: var(--space-xs);
-        }
-
-        .why-us-content p {
-            font-size: 0.95rem;
-            color: var(--dark-gray);
-            line-height: 1.6;
-        }
-
-        .value-prop {
-            background: var(--white);
-            padding: var(--space-4xl) var(--space-xl);
-            text-align: center;
-        }
-
-        .value-prop h2 {
-            font-size: 2.2rem;
-            color: var(--daisy-teal);
-            margin-bottom: var(--space-3xl);
-        }
-
-        .value-cards {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: var(--space-2xl);
-            max-width: 1100px;
-            margin: 0 auto;
-        }
-
-        .value-card {
-            background: var(--light-bg);
-            padding: var(--space-2xl);
-            border-radius: 8px;
-            border-left: 4px solid var(--daisy-teal);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-            transition: transform 0.3s;
-        }
-
-        .value-card:hover {
-            transform: translateY(-4px);
-        }
-
-        .value-icon {
-            font-size: 2.5rem;
-            color: var(--daisy-teal);
-            margin-bottom: var(--space-md);
-        }
-
-        .value-card h3 {
-            font-size: 1.4rem;
-            color: var(--daisy-teal);
-            margin-bottom: var(--space-md);
-        }
-
-        .value-card p {
-            font-size: 1rem;
-            line-height: 1.7;
-        }
-
-        .results-section {
-            padding: var(--space-4xl) var(--space-xl);
-            background: var(--light-bg);
-        }
-
-        .results-section h2 {
-            font-size: 2.2rem;
-            text-align: center;
-            color: var(--daisy-teal);
-            margin-bottom: var(--space-3xl);
-        }
-
-        .results-claim {
-            background: linear-gradient(135deg, rgba(14, 58, 71, 0.08) 0%, rgba(109, 209, 202, 0.08) 100%);
-            border-left: 4px solid var(--daisy-teal);
-            border-radius: 8px;
-            padding: var(--space-2xl);
-            max-width: 800px;
-            margin: 0 auto var(--space-2xl);
-        }
-
-        .results-claim h3 {
-            font-size: 1.5rem;
-            color: var(--daisy-teal);
-            margin-bottom: var(--space-md);
-            display: flex;
-            align-items: center;
-            gap: var(--space-md);
-            justify-content: center;
-        }
-
-        .results-icon {
-            font-size: 1.8rem;
-            color: var(--accent-success);
-        }
-
-        .results-claim p {
-            font-size: 1.05rem;
-            line-height: 1.7;
-        }
-
-        .highlight-two-weeks {
-            font-weight: 700;
-            color: var(--daisy-mint);
-            background: rgba(109, 209, 202, 0.15);
-            padding: 2px 8px;
-            border-radius: 4px;
-            display: inline-block;
-        }
-
-        .testimonials-section {
-            background: var(--white);
-            padding: var(--space-4xl) var(--space-xl);
-        }
-
-        .testimonials-section h2 {
-            font-size: 2.2rem;
-            text-align: center;
-            color: var(--daisy-teal);
-            margin-bottom: var(--space-3xl);
-        }
-
-        .testimonials-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: var(--space-2xl);
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .testimonial-card {
-            background: var(--light-bg);
-            padding: var(--space-2xl);
-            border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-            display: flex;
-            flex-direction: column;
-            gap: var(--space-lg);
-        }
-
-        .stars {
-            color: #ffc107;
-            font-size: 1.2rem;
-        }
-
-        .testimonial-text {
-            font-style: italic;
-            font-size: 1rem;
-            line-height: 1.7;
-            color: var(--dark-gray);
-        }
-
-        .testimonial-author {
-            font-weight: 600;
-            color: var(--daisy-teal);
-        }
-
-        .expertise-section {
-            background: var(--light-bg);
-            padding: var(--space-4xl) var(--space-xl);
-        }
-
-        .expertise-section h2 {
-            font-size: 2.2rem;
-            text-align: center;
-            color: var(--daisy-teal);
-            margin-bottom: var(--space-3xl);
-        }
-
-        .expertise-content {
-            max-width: 1000px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: var(--space-2xl);
-        }
-
-        .expertise-item {
-            background: var(--white);
-            padding: var(--space-2xl);
-            text-align: center;
-            border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-        }
-
-        .expertise-icon {
-            font-size: 2.5rem;
-            color: var(--daisy-mint);
-            margin-bottom: var(--space-md);
-        }
-
-        .expertise-item h3 {
-            font-size: 1.3rem;
-            color: var(--daisy-teal);
-            margin-bottom: var(--space-md);
-        }
-
-        .expertise-item p {
-            font-size: 0.95rem;
-            line-height: 1.7;
-        }
-
-        .process-section {
-            background: var(--white);
-            padding: var(--space-4xl) var(--space-xl);
-        }
-
-        .process-section h2 {
-            font-size: 2.2rem;
-            text-align: center;
-            color: var(--daisy-teal);
-            margin-bottom: var(--space-3xl);
-        }
-
-        .process-timeline {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: var(--space-2xl);
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-
-        .process-step {
-            background: var(--light-bg);
-            padding: var(--space-2xl);
-            border-radius: 8px;
-            text-align: center;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-            position: relative;
-        }
-
-        .process-number {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 50px;
-            height: 50px;
-            background: var(--daisy-teal);
-            color: var(--white);
-            border-radius: 50%;
-            font-weight: 700;
-            font-size: 1.5rem;
-            margin-bottom: var(--space-lg);
-        }
-
-        .process-step h4 {
-            font-size: 1.2rem;
-            color: var(--daisy-teal);
-            margin-bottom: var(--space-md);
-        }
-
-        .faq-section {
-            background: var(--light-bg);
-            padding: var(--space-4xl) var(--space-xl);
-        }
-
-        .faq-section h2 {
-            font-size: 2.2rem;
-            text-align: center;
-            color: var(--daisy-teal);
-            margin-bottom: var(--space-3xl);
-        }
-
-        .faq-container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .faq-item {
-            margin-bottom: var(--space-lg);
-            border: 1px solid var(--border-gray);
-            border-radius: 8px;
+        .proof-image-wrapper {
+            border-radius: 12px;
             overflow: hidden;
-            background: var(--white);
-        }
-
-        .faq-question {
-            padding: var(--space-lg);
-            background: var(--white);
-            cursor: pointer;
-            font-weight: 600;
-            color: var(--daisy-teal);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            transition: background 0.3s;
-        }
-
-        .faq-question:hover {
-            background: var(--light-bg);
-        }
-
-        .faq-answer {
-            padding: var(--space-lg);
-            background: var(--light-bg);
-            display: none;
-        }
-
-        .faq-answer.active {
-            display: block;
-        }
-
-        .final-cta-section {
-            background: linear-gradient(135deg, var(--daisy-teal-dark) 0%, var(--daisy-teal) 100%);
-            color: var(--white);
-            padding: var(--space-4xl) var(--space-xl);
-            text-align: center;
-        }
-
-        .final-cta-section h2 {
-            font-size: 2rem;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
             margin-bottom: var(--space-xl);
         }
 
-        .final-cta-section p {
-            font-size: 1.1rem;
-            margin-bottom: var(--space-2xl);
-            max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;
+        .proof-image-wrapper img {
+            width: 100%;
+            height: auto;
+            display: block;
         }
 
-        .cta-buttons {
+        .proof-timeline-markers {
             display: flex;
-            flex-wrap: wrap;
-            gap: var(--space-lg);
-            justify-content: center;
+            justify-content: space-between;
+            margin-bottom: var(--space-xl);
+            position: relative;
+            padding: 0 var(--space-md);
         }
 
-        .cta-button {
+        .proof-timeline-markers::before {
+            content: '';
+            position: absolute;
+            top: 20px;
+            left: 10%;
+            right: 10%;
+            height: 3px;
+            background: linear-gradient(to right, #e74c3c, var(--gold), var(--accent-success));
+            z-index: 0;
+        }
+
+        .proof-marker {
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            flex: 1;
+        }
+
+        .proof-marker-dot {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin: 0 auto var(--space-xs);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 0.75rem;
+            color: var(--white);
+        }
+
+        .proof-marker:nth-child(1) .proof-marker-dot { background: #e74c3c; }
+        .proof-marker:nth-child(2) .proof-marker-dot { background: var(--gold); }
+        .proof-marker:nth-child(3) .proof-marker-dot { background: var(--accent-success); }
+
+        .proof-marker-label {
+            font-weight: 700;
+            font-size: 0.85rem;
+            color: var(--daisy-teal);
+        }
+
+        .proof-marker-desc {
+            font-size: 0.8rem;
+            color: var(--dark-gray);
+            margin-top: 2px;
+        }
+
+        .proof-quote {
+            background: linear-gradient(135deg, rgba(14, 58, 71, 0.06) 0%, rgba(109, 209, 202, 0.06) 100%);
+            border-left: 4px solid var(--accent-success);
+            border-radius: 8px;
+            padding: var(--space-lg) var(--space-xl);
+            margin-bottom: var(--space-xl);
+        }
+
+        .proof-quote p {
+            font-style: italic;
+            font-size: 1.05rem;
+            line-height: 1.7;
+            color: var(--dark-gray);
+        }
+
+        .proof-guarantee {
+            text-align: center;
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--accent-success);
+            margin-bottom: var(--space-xl);
+        }
+
+        .proof-guarantee i {
+            margin-right: 6px;
+        }
+
+        .proof-cta {
+            text-align: center;
+        }
+
+        .proof-cta a {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--gold) 0%, var(--gold-dark) 100%);
+            color: #1a1a1a;
             padding: 16px 40px;
             font-size: 1rem;
             font-weight: 600;
-            border-radius: 8px;
             text-decoration: none;
+            border-radius: 8px;
             transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 8px 24px rgba(212, 175, 55, 0.3);
             text-transform: uppercase;
             letter-spacing: 0.5px;
         }
 
-        .cta-primary {
-            background: linear-gradient(135deg, var(--gold) 0%, var(--gold-dark) 100%);
-            color: #1a1a1a;
-            box-shadow: 0 8px 24px rgba(212, 175, 55, 0.3);
-        }
-
-        .cta-primary:hover {
+        .proof-cta a:hover {
             transform: translateY(-4px);
             box-shadow: 0 12px 32px rgba(212, 175, 55, 0.5);
         }
 
-        .cta-secondary {
-            background: transparent;
-            color: var(--white);
-            border: 2px solid var(--white);
-        }
-
-        .cta-secondary:hover {
-            transform: translateY(-4px);
-            background: rgba(255, 255, 255, 0.1);
-        }
-
-        .location-languages {
-            background: var(--light-bg);
-            padding: var(--space-2xl) var(--space-xl);
-            text-align: center;
-            border-top: 1px solid var(--border-gray);
-            border-bottom: 1px solid var(--border-gray);
-        }
-
-        .location-languages p {
-            font-size: 1rem;
-            color: var(--daisy-teal);
-            font-weight: 600;
-            margin-bottom: var(--space-md);
-        }
-
-        footer {
-            background: var(--dark-gray);
-            color: var(--white);
-            padding: var(--space-2xl) var(--space-xl);
-            text-align: center;
-            font-size: 0.9rem;
-        }
-
-        /* Video Testimonial Section */
+        /* ============ VIDEO TESTIMONIAL ============ */
         .video-testimonial-section {
             background: linear-gradient(135deg, var(--daisy-teal-dark) 0%, var(--daisy-teal) 100%);
             padding: var(--space-3xl) var(--space-lg);
@@ -896,6 +628,467 @@
             box-shadow: 0 12px 32px rgba(212, 175, 55, 0.5);
         }
 
+        /* ============ FOUNDER ============ */
+        .founder-section {
+            background: var(--light-bg);
+            padding: var(--space-4xl) var(--space-xl);
+        }
+
+        .founder-container {
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            gap: var(--space-2xl);
+            align-items: center;
+        }
+
+        .founder-image {
+            flex-shrink: 0;
+            width: 280px;
+        }
+
+        .founder-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+        }
+
+        .founder-image-caption {
+            text-align: center;
+            font-size: 0.8rem;
+            color: var(--dark-gray);
+            margin-top: var(--space-xs);
+            opacity: 0.7;
+        }
+
+        .founder-content {
+            flex: 1;
+        }
+
+        .founder-content h2 {
+            font-size: 2rem;
+            color: var(--daisy-teal);
+            margin-bottom: var(--space-lg);
+        }
+
+        .founder-quote {
+            font-size: 1.15rem;
+            font-style: italic;
+            color: var(--daisy-teal);
+            line-height: 1.7;
+            margin-bottom: var(--space-sm);
+            position: relative;
+            padding-left: var(--space-lg);
+            border-left: 3px solid var(--gold);
+        }
+
+        .founder-name {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--daisy-teal);
+            margin-bottom: var(--space-xl);
+            padding-left: var(--space-lg);
+        }
+
+        .founder-bio {
+            font-size: 0.95rem;
+            line-height: 1.7;
+            color: var(--dark-gray);
+        }
+
+        /* ============ WHY US ============ */
+        .why-us-section {
+            background: var(--white);
+            padding: var(--space-4xl) var(--space-xl);
+        }
+
+        .why-us-section h2 {
+            font-size: 2.2rem;
+            color: var(--daisy-teal);
+            text-align: center;
+            margin-bottom: var(--space-lg);
+        }
+
+        .why-us-subtitle {
+            text-align: center;
+            color: var(--dark-gray);
+            margin-bottom: var(--space-3xl);
+            font-size: 1.05rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .why-us-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: var(--space-xl);
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .why-us-item {
+            display: flex;
+            align-items: flex-start;
+            gap: var(--space-md);
+            padding: var(--space-lg);
+            background: var(--light-bg);
+            border-radius: 8px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .why-us-item:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+        }
+
+        .why-us-icon {
+            font-size: 2rem;
+            color: var(--gold);
+            flex-shrink: 0;
+        }
+
+        .why-us-content h3 {
+            font-size: 1.1rem;
+            color: var(--daisy-teal);
+            margin-bottom: var(--space-xs);
+        }
+
+        .why-us-content p {
+            font-size: 0.95rem;
+            color: var(--dark-gray);
+            line-height: 1.6;
+        }
+
+        /* ============ VALUE PROP ============ */
+        .value-prop {
+            background: var(--white);
+            padding: var(--space-4xl) var(--space-xl);
+            text-align: center;
+        }
+
+        .value-prop h2 {
+            font-size: 2.2rem;
+            color: var(--daisy-teal);
+            margin-bottom: var(--space-3xl);
+        }
+
+        .value-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: var(--space-2xl);
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .value-card {
+            background: var(--light-bg);
+            padding: var(--space-2xl);
+            border-radius: 8px;
+            border-left: 4px solid var(--daisy-teal);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s;
+        }
+
+        .value-card:hover {
+            transform: translateY(-4px);
+        }
+
+        .value-icon {
+            font-size: 2.5rem;
+            color: var(--daisy-teal);
+            margin-bottom: var(--space-md);
+        }
+
+        .value-card h3 {
+            font-size: 1.4rem;
+            color: var(--daisy-teal);
+            margin-bottom: var(--space-md);
+        }
+
+        .value-card p {
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+
+        /* ============ TESTIMONIALS ============ */
+        .testimonials-section {
+            background: var(--light-bg);
+            padding: var(--space-4xl) var(--space-xl);
+        }
+
+        .testimonials-section h2 {
+            font-size: 2.2rem;
+            text-align: center;
+            color: var(--daisy-teal);
+            margin-bottom: var(--space-3xl);
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--space-2xl);
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .testimonial-card {
+            background: var(--white);
+            padding: var(--space-2xl);
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-lg);
+        }
+
+        .stars {
+            color: #ffc107;
+            font-size: 1.2rem;
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            font-size: 1rem;
+            line-height: 1.7;
+            color: var(--dark-gray);
+        }
+
+        .testimonial-author {
+            font-weight: 600;
+            color: var(--daisy-teal);
+        }
+
+        /* ============ MID-PAGE CTA ============ */
+        .mid-cta {
+            text-align: center;
+            padding: var(--space-2xl) var(--space-xl);
+            background: var(--white);
+        }
+
+        .mid-cta a {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--gold) 0%, var(--gold-dark) 100%);
+            color: #1a1a1a;
+            padding: 14px 36px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 8px 24px rgba(212, 175, 55, 0.3);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .mid-cta a:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 32px rgba(212, 175, 55, 0.5);
+        }
+
+        .mid-cta p {
+            font-size: 0.85rem;
+            color: var(--dark-gray);
+            margin-top: var(--space-sm);
+        }
+
+        /* ============ 3 STEPS ============ */
+        .expertise-section {
+            background: var(--white);
+            padding: var(--space-4xl) var(--space-xl);
+        }
+
+        .expertise-section h2 {
+            font-size: 2.2rem;
+            text-align: center;
+            color: var(--daisy-teal);
+            margin-bottom: var(--space-3xl);
+        }
+
+        .expertise-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: var(--space-2xl);
+        }
+
+        .expertise-item {
+            background: var(--light-bg);
+            padding: var(--space-2xl);
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        .expertise-icon {
+            font-size: 2.5rem;
+            color: var(--daisy-mint);
+            margin-bottom: var(--space-md);
+        }
+
+        .expertise-item h3 {
+            font-size: 1.3rem;
+            color: var(--daisy-teal);
+            margin-bottom: var(--space-md);
+        }
+
+        .expertise-item p {
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        /* ============ FAQ ============ */
+        .faq-section {
+            background: var(--light-bg);
+            padding: var(--space-4xl) var(--space-xl);
+        }
+
+        .faq-section h2 {
+            font-size: 2.2rem;
+            text-align: center;
+            color: var(--daisy-teal);
+            margin-bottom: var(--space-3xl);
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            margin-bottom: var(--space-lg);
+            border: 1px solid var(--border-gray);
+            border-radius: 8px;
+            overflow: hidden;
+            background: var(--white);
+        }
+
+        .faq-question {
+            padding: var(--space-lg);
+            background: var(--white);
+            cursor: pointer;
+            font-weight: 600;
+            color: var(--daisy-teal);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background 0.3s;
+        }
+
+        .faq-question:hover {
+            background: var(--light-bg);
+        }
+
+        .faq-answer {
+            padding: var(--space-lg);
+            background: var(--light-bg);
+            display: none;
+        }
+
+        .faq-answer.active {
+            display: block;
+        }
+
+        .faq-answer a {
+            color: var(--daisy-aqua);
+            font-weight: 600;
+        }
+
+        /* ============ FINAL CTA ============ */
+        .final-cta-section {
+            background: linear-gradient(135deg, var(--daisy-teal-dark) 0%, var(--daisy-teal) 100%);
+            color: var(--white);
+            padding: var(--space-4xl) var(--space-xl);
+            text-align: center;
+        }
+
+        .final-cta-section h2 {
+            font-size: 2rem;
+            margin-bottom: var(--space-md);
+        }
+
+        .final-cta-guarantee {
+            font-size: 0.95rem;
+            color: var(--gold-light);
+            font-weight: 600;
+            margin-bottom: var(--space-xl);
+        }
+
+        .final-cta-section p {
+            font-size: 1.1rem;
+            margin-bottom: var(--space-2xl);
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--space-lg);
+            justify-content: center;
+        }
+
+        .cta-button {
+            padding: 16px 40px;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .cta-primary {
+            background: linear-gradient(135deg, var(--gold) 0%, var(--gold-dark) 100%);
+            color: #1a1a1a;
+            box-shadow: 0 8px 24px rgba(212, 175, 55, 0.3);
+        }
+
+        .cta-primary:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 32px rgba(212, 175, 55, 0.5);
+        }
+
+        .cta-secondary {
+            background: transparent;
+            color: var(--white);
+            border: 2px solid var(--white);
+        }
+
+        .cta-secondary:hover {
+            transform: translateY(-4px);
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        /* ============ LOCATION / FOOTER ============ */
+        .location-languages {
+            background: var(--light-bg);
+            padding: var(--space-2xl) var(--space-xl);
+            text-align: center;
+            border-top: 1px solid var(--border-gray);
+            border-bottom: 1px solid var(--border-gray);
+        }
+
+        .location-languages p {
+            font-size: 1rem;
+            color: var(--daisy-teal);
+            font-weight: 600;
+            margin-bottom: var(--space-md);
+        }
+
+        footer {
+            background: var(--dark-gray);
+            color: var(--white);
+            padding: var(--space-2xl) var(--space-xl);
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        /* ============ RESPONSIVE ============ */
         @media (min-width: 769px) {
             .video-testimonial-section {
                 padding: var(--space-4xl) var(--space-xl);
@@ -908,9 +1101,203 @@
             .video-wrapper {
                 max-width: 420px;
             }
+
+            .mobile-google-rating {
+                display: none !important;
+            }
+        }
+
+        @media (max-width: 1024px) {
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .value-cards {
+                grid-template-columns: 1fr;
+            }
+
+            .founder-container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .founder-image {
+                width: 220px;
+            }
+
+            .founder-quote {
+                border-left: none;
+                border-top: 3px solid var(--gold);
+                padding-left: 0;
+                padding-top: var(--space-md);
+            }
+
+            .founder-name {
+                padding-left: 0;
+            }
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                padding: var(--space-sm) var(--space-md);
+                flex-wrap: wrap;
+                gap: var(--space-xs);
+            }
+
+            .logo-section img {
+                height: 34px;
+            }
+
+            .google-rating.desktop-only {
+                display: none;
+            }
+
+            .mobile-google-rating {
+                display: flex !important;
+                width: 100%;
+                justify-content: center;
+                padding-top: var(--space-xs);
+                border-top: 1px solid var(--border-gray);
+                order: 3;
+            }
+
+            .nav-phone {
+                display: none;
+            }
+
+            .sticky-cta {
+                display: block;
+            }
+
+            body {
+                padding-bottom: 60px;
+            }
+
+            .hero {
+                padding: var(--space-3xl) var(--space-lg);
+                min-height: auto;
+                background-image:
+                    linear-gradient(180deg, rgba(5, 31, 42, 0.82) 0%, rgba(14, 58, 71, 0.78) 100%),
+                    url('public/images/hero-background.jpg');
+                background-size: cover;
+                background-position: center;
+                background-attachment: scroll;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero-subheading {
+                font-size: 1rem;
+            }
+
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-cta {
+                width: 100%;
+                max-width: 100%;
+            }
+
+            .before-after-gallery,
+            .value-prop,
+            .testimonials-section,
+            .expertise-section,
+            .faq-section,
+            .final-cta-section,
+            .video-testimonial-section,
+            .proof-timeline-section,
+            .founder-section {
+                padding: var(--space-3xl) var(--space-lg);
+            }
+
+            .expertise-content {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery-title,
+            .value-prop h2,
+            .testimonials-section h2,
+            .expertise-section h2,
+            .faq-section h2,
+            .final-cta-section h2,
+            .video-testimonial-section h2,
+            .proof-timeline-section h2 {
+                font-size: 1.6rem;
+            }
+
+            .founder-content h2 {
+                font-size: 1.6rem;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+            }
+
+            .cta-button {
+                width: 100%;
+            }
+
+            .proof-timeline-markers {
+                gap: var(--space-xs);
+            }
+
+            .proof-marker-dot {
+                width: 34px;
+                height: 34px;
+                font-size: 0.65rem;
+            }
+
+            .proof-marker-label {
+                font-size: 0.75rem;
+            }
+
+            .proof-marker-desc {
+                font-size: 0.7rem;
+            }
+
+            .mid-cta a {
+                width: 100%;
+                display: block;
+            }
         }
 
         @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 1.75rem;
+                margin-bottom: var(--space-md);
+            }
+
+            .hero-subheading {
+                font-size: 0.95rem;
+                margin-bottom: var(--space-sm);
+            }
+
+            .hero-guarantee {
+                font-size: 0.85rem;
+            }
+
+            .gallery-title,
+            .value-prop h2,
+            .testimonials-section h2,
+            .expertise-section h2,
+            .faq-section h2,
+            .video-testimonial-section h2,
+            .proof-timeline-section h2 {
+                font-size: 1.4rem;
+            }
+
+            .hero-cta {
+                padding: 16px 32px;
+                font-size: 0.95rem;
+            }
+
             .video-testimonial-section h2 {
                 font-size: 1.5rem;
             }
@@ -935,156 +1322,15 @@
                 padding: 0 var(--space-md);
             }
 
-            .video-cta-button {
+            .video-cta-button,
+            .proof-cta a {
                 width: 100%;
                 max-width: 100%;
-            }
-        }
-
-        @media (max-width: 1024px) {
-            .hero h1 {
-                font-size: 2.2rem;
-            }
-
-            .gallery-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .value-cards {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        @media (max-width: 768px) {
-            nav {
-                padding: var(--space-md) var(--space-lg);
-            }
-
-            .logo-section img {
-                height: 38px;
-            }
-
-            .google-rating {
-                display: none;
-            }
-
-            .nav-phone {
-                display: none;
-            }
-
-            .sticky-cta {
                 display: block;
             }
 
-            body {
-                padding-bottom: 60px;
-            }
-
-            .hero {
-                padding: var(--space-3xl) var(--space-lg);
-                min-height: auto;
-                background-image: none;
-                background-color: var(--daisy-teal);
-            }
-
-            .hero h1 {
-                font-size: 2.7rem;
-            }
-
-            .hero-subheading {
-                font-size: 1rem;
-            }
-
-            .gallery-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .hero-cta {
-                width: 100%;
-                max-width: 100%;
-            }
-
-            .before-after-gallery,
-            .value-prop,
-            .results-section,
-            .testimonials-section,
-            .expertise-section,
-            .process-section,
-            .faq-section,
-            .final-cta-section,
-            .video-testimonial-section {
-                padding: var(--space-3xl) var(--space-lg);
-            }
-
-            .expertise-content {
-                grid-template-columns: 1fr;
-            }
-
-            .gallery-title,
-            .value-prop h2,
-            .results-section h2,
-            .testimonials-section h2,
-            .expertise-section h2,
-            .process-section h2,
-            .faq-section h2,
-            .final-cta-section h2,
-            .video-testimonial-section h2 {
-                font-size: 1.6rem;
-            }
-
-            .cta-buttons {
-                flex-direction: column;
-            }
-
-            .cta-button {
-                width: 100%;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .hero h1 {
-                font-size: 2.25rem;
-                margin-bottom: var(--space-md);
-            }
-
-            .hero-subheading {
-                font-size: 0.95rem;
-                margin-bottom: var(--space-lg);
-            }
-
-            .gallery-title,
-            .value-prop h2,
-            .results-section h2,
-            .testimonials-section h2,
-            .expertise-section h2,
-            .process-section h2,
-            .faq-section h2,
-            .video-testimonial-section h2 {
-                font-size: 1.4rem;
-            }
-
-            .hero-cta {
-                padding: 16px 32px;
-                font-size: 0.95rem;
-            }
-
-            .results-claim {
-                padding: var(--space-lg);
-            }
-
-            .results-claim h3 {
-                font-size: 1.2rem;
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .results-claim p {
-                font-size: 0.95rem;
-            }
-
-            .highlight-two-weeks {
-                display: block;
-                margin: var(--space-xs) 0;
+            .founder-image {
+                width: 180px;
             }
         }
     </style>
@@ -1099,49 +1345,99 @@
     <nav>
         <div class="logo-section">
             <img src="public/images/daisy-logo.png" alt="Daisy MD Care Logo">
-            <span class="google-rating">✨ 10,000+ Happy Clients</span>
+            <a href="https://www.google.com/search?q=Daisy+MD+Care+reviews" target="_blank" rel="noopener" class="google-rating desktop-only">
+                <span class="google-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span> 4.8 on Google (150+ Reviews)
+            </a>
         </div>
         <div class="nav-right">
             <a href="tel:+1-877-877-3030" class="nav-phone"><i class="fas fa-phone"></i> (877) 877-3030</a>
             <a href="#contact">Contact</a>
         </div>
+        <a href="https://www.google.com/search?q=Daisy+MD+Care+reviews" target="_blank" rel="noopener" class="google-rating mobile-google-rating" style="display:none;">
+            <span class="google-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span> 4.8 on Google (150+ Reviews)
+        </a>
     </nav>
 
+    <!-- ============ HERO ============ -->
     <section class="hero">
         <div class="hero-content">
-            <h1>Finally Clear Your Acne & Dark Spots - Visible Results in 2 Weeks</h1>
-            <p class="hero-subheading">Professional treatment to clear your skin and eliminate dark spots. See improvement in 2 weeks guaranteed.</p>
-            <p class="hero-note" style="font-size: 1.1rem; font-weight: 600; margin-bottom: 24px;">Same-Day Appointments Available! | Se habla español.</p>
+            <h1>Finally Clear Your Acne & Dark Spots</h1>
+            <p class="hero-subheading">Professional treatment to clear your skin and eliminate dark spots. Results you can see.</p>
+            <p class="hero-guarantee"><i class="fas fa-shield-halved"></i> Visible results in 2 weeks guaranteed or money back.</p>
 
             <div class="hero-cta-group">
                 <div style="display: flex; gap: 16px; flex-wrap: wrap; justify-content: center; width: 100%;">
                     <a href="https://www.daisymdcare.com/booking-santa-ana?loc=santa-ana" class="hero-cta">Book Free Consultation</a>
-                    <a href="tel:+1-877-877-3030" class="hero-cta hero-cta-secondary"><i class="fas fa-phone"></i> Call Now: (877) 877-3030</a>
+                    <a href="tel:+1-877-877-3030" class="hero-cta hero-cta-secondary"><i class="fas fa-phone"></i> Call: (877) 877-3030</a>
                 </div>
-                <p class="hero-note">Struggling with persistent acne or skin marks? In your free consultation, we'll evaluate your pigmentation and breakouts to design a plan that clears your face fast, without harsh pills.</p>
+                <p class="hero-note">Limited spots available. Se habla español.</p>
             </div>
         </div>
     </section>
 
+    <!-- ============ BEFORE/AFTER GALLERY ============ -->
     <section class="before-after-gallery">
         <h2 class="gallery-title">Real Patients, Clear Results</h2>
         <p class="gallery-subtitle">See the transformation when expert treatment meets personalized care.</p>
         <div class="gallery-grid">
             <div class="gallery-card">
-                <img src="public/images/before-01.png" alt="Acne treatment - before and after results" loading="lazy">
-                <div class="gallery-label">Blemish-Free Skin</div>
+                <img src="public/images/patient-05.png" alt="Severe cystic acne cleared with professional treatment" loading="lazy">
+                <div class="gallery-label">Severe Acne &rarr; Clear Skin</div>
             </div>
             <div class="gallery-card">
-                <img src="public/images/before-02.png" alt="Professional facial treatment results" loading="lazy">
-                <div class="gallery-label">Improved Texture & Tone</div>
+                <img src="public/images/before-01.png" alt="Acne and redness reduced with clinical facial treatment" loading="lazy">
+                <div class="gallery-label">Inflammation &rarr; Calm, Even Tone</div>
             </div>
             <div class="gallery-card">
-                <img src="public/images/patient-05.png" alt="Advanced acne treatment results" loading="lazy">
-                <div class="gallery-label">Lasting Results</div>
+                <img src="public/images/before-02.png" alt="Dark spots and acne scarring faded after treatment" loading="lazy">
+                <div class="gallery-label">Dark Spots &rarr; Smooth Complexion</div>
             </div>
         </div>
     </section>
 
+    <!-- ============ PROOF TIMELINE (Case Study) ============ -->
+    <section class="proof-timeline-section">
+        <h2>Real Progress in 2 Weeks, Documented</h2>
+        <p class="proof-subtitle">From first visit to clear skin. One patient's actual journey with Daisy MD Care.</p>
+
+        <div class="proof-case-study">
+            <div class="proof-image-wrapper">
+                <img src="public/images/after-6months.jpg" alt="Patient acne transformation - before and after 6 months of treatment at Daisy MD Care" loading="lazy">
+            </div>
+
+            <div class="proof-timeline-markers">
+                <div class="proof-marker">
+                    <div class="proof-marker-dot">Day 1</div>
+                    <div class="proof-marker-label">First Visit</div>
+                    <div class="proof-marker-desc">Assessment + treatment plan</div>
+                </div>
+                <div class="proof-marker">
+                    <div class="proof-marker-dot">Wk 2</div>
+                    <div class="proof-marker-label">Visible Change</div>
+                    <div class="proof-marker-desc">Inflammation reduced</div>
+                </div>
+                <div class="proof-marker">
+                    <div class="proof-marker-dot">Mo 6</div>
+                    <div class="proof-marker-label">Clear Skin</div>
+                    <div class="proof-marker-desc">Full transformation</div>
+                </div>
+            </div>
+
+            <div class="proof-quote">
+                <p>"I came in with severe acne covering my face. By week two, the redness was already going down. By month six, people couldn't believe it was the same person."</p>
+            </div>
+
+            <div class="proof-guarantee">
+                <i class="fas fa-check-circle"></i> Visible results in 2 weeks guaranteed or money back.
+            </div>
+
+            <div class="proof-cta">
+                <a href="https://www.daisymdcare.com/booking-santa-ana?loc=santa-ana">See What's Possible For You</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ VIDEO TESTIMONIAL ============ -->
     <section class="video-testimonial-section">
         <h2>Hear a Real Patient's Story</h2>
         <p class="video-testimonial-subtitle">She tried everything. Then she found Daisy MD Care.</p>
@@ -1169,9 +1465,26 @@
             <span class="testimonial-quote-name">- Real Daisy MD Care Patient</span>
         </div>
 
-        <a href="https://www.daisymdcare.com/booking-santa-ana" class="video-cta-button">Start Your Transformation</a>
+        <a href="https://www.daisymdcare.com/booking-santa-ana?loc=santa-ana" class="video-cta-button">Start Your Transformation</a>
     </section>
 
+    <!-- ============ FOUNDER ============ -->
+    <section class="founder-section">
+        <div class="founder-container">
+            <div class="founder-image">
+                <img src="public/images/daisy-founder.jpg" alt="Daisy, Founder of Daisy MD Care, performing a facial treatment in 1979" loading="lazy">
+                <p class="founder-image-caption">Daisy, circa 1979</p>
+            </div>
+            <div class="founder-content">
+                <h2>Meet the Expert Behind Your Results</h2>
+                <p class="founder-quote">"I believe that everyone deserves to feel comfortable and confident in their skin."</p>
+                <p class="founder-name">— Daisy, Founder</p>
+                <p class="founder-bio">Daisy MD Care is a specialized skin care clinic focused exclusively on problem skin, with particular expertise in acne and acne scarring. Founded in 1979, our approach combines medical-grade treatments with personalized care plans to deliver results that have transformed thousands of lives. We don't stop until your skin is clear.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ WHY US ============ -->
     <section class="why-us-section">
         <h2>Why 10,000+ Patients Trust Daisy MD Care</h2>
         <p class="why-us-subtitle">We understand your struggle. After trying countless products and treatments, you deserve care that actually works.</p>
@@ -1179,8 +1492,8 @@
             <div class="why-us-item">
                 <div class="why-us-icon"><i class="fas fa-award"></i></div>
                 <div class="why-us-content">
-                    <h3>42+ Years of Expertise</h3>
-                    <p>Four decades transforming skin with proven methods, not following trends.</p>
+                    <h3>Founded in 1979</h3>
+                    <p>Over four decades transforming skin with proven methods, not following trends.</p>
                 </div>
             </div>
             <div class="why-us-item">
@@ -1201,14 +1514,14 @@
                 <div class="why-us-icon"><i class="fas fa-fingerprint"></i></div>
                 <div class="why-us-content">
                     <h3>Personalized Treatment</h3>
-                    <p>No cookie-cutter plans here. Your skin is unique, and your treatment should be too.</p>
+                    <p>No cookie-cutter plans. Your skin is unique, and your treatment should be too.</p>
                 </div>
             </div>
             <div class="why-us-item">
-                <div class="why-us-icon"><i class="fas fa-bolt"></i></div>
+                <div class="why-us-icon"><i class="fas fa-clock"></i></div>
                 <div class="why-us-content">
-                    <h3>Same-Day Appointments</h3>
-                    <p>Don't wait weeks to start. Begin clearing your skin today.</p>
+                    <h3>Limited Spots Available</h3>
+                    <p>We keep appointments limited to ensure every patient gets personal attention.</p>
                 </div>
             </div>
             <div class="why-us-item">
@@ -1221,6 +1534,7 @@
         </div>
     </section>
 
+    <!-- ============ VALUE PROP ============ -->
     <section class="value-prop">
         <h2>More Than Just Acne: Goodbye Dark Spots</h2>
         <p class="gallery-subtitle" style="margin-bottom: var(--space-3xl);">A complete treatment that targets breakouts and restores your skin tone.</p>
@@ -1243,42 +1557,42 @@
         </div>
     </section>
 
-    <section class="results-section">
-        <h2>Results in 2 Weeks</h2>
-        <div class="results-claim">
-            <h3><i class="fas fa-check-circle results-icon"></i> "Results in <span class="highlight-two-weeks">2 Weeks</span>" isn't just a slogan</h3>
-            <p>With our 42 years of experience, we know exactly how to calm inflammation and clear skin quickly.<br><br><strong>Local Experts in Santa Ana • Over 4 Decades of Experience</strong></p>
-        </div>
-    </section>
-
+    <!-- ============ TESTIMONIALS ============ -->
     <section class="testimonials-section">
         <h2>What Our Patients Say</h2>
         <div class="testimonials-grid">
             <div class="testimonial-card">
-                <div class="stars">★★★★★</div>
+                <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
                 <p class="testimonial-text">"I finally found a treatment that actually works! The Daisy MD Care team is professional and expert. My skin has never looked better."</p>
                 <p class="testimonial-author">- Maria G., Santa Ana, CA</p>
             </div>
             <div class="testimonial-card">
-                <div class="stars">★★★★★</div>
+                <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
                 <p class="testimonial-text">"I've tried everything, but nothing worked until I came to Daisy MD Care. The personalized approach and real experience made all the difference."</p>
                 <p class="testimonial-author">- James R., Los Angeles, CA</p>
             </div>
             <div class="testimonial-card">
-                <div class="stars">★★★★★</div>
+                <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
                 <p class="testimonial-text">"They really listen and understand what you're going through. The results are incredible and the staff is so welcoming."</p>
                 <p class="testimonial-author">- Sofia L., Orange County, CA</p>
             </div>
         </div>
     </section>
 
+    <!-- ============ MID-PAGE CTA ============ -->
+    <div class="mid-cta">
+        <a href="https://www.daisymdcare.com/booking-santa-ana?loc=santa-ana">Book Your Free Consultation</a>
+        <p>Limited spots available. Se habla español.</p>
+    </div>
+
+    <!-- ============ 3 STEPS ============ -->
     <section class="expertise-section">
         <h2>Regain Your Confidence in 3 Steps</h2>
         <div class="expertise-content">
             <div class="expertise-item">
                 <div class="expertise-icon"><i class="fas fa-calendar-check"></i></div>
-                <h3>Free Consultation (Today)</h3>
-                <p>Take advantage of our same-day appointments. We analyze your spots and acne level at no cost.</p>
+                <h3>Free Consultation</h3>
+                <p>Limited spots available each week. We analyze your skin and acne level at no cost.</p>
             </div>
             <div class="expertise-item">
                 <div class="expertise-icon"><i class="fas fa-wand-magic-sparkles"></i></div>
@@ -1288,58 +1602,91 @@
             <div class="expertise-item">
                 <div class="expertise-icon"><i class="fas fa-bolt"></i></div>
                 <h3>Fast Results</h3>
-                <p>Notice clearer skin and a more even tone in just 2 weeks.</p>
+                <p>Visible results in 2 weeks guaranteed or money back. We don't stop until your skin is clear.</p>
             </div>
         </div>
     </section>
 
-
+    <!-- ============ FAQ ============ -->
     <section class="faq-section">
         <h2>Frequently Asked Questions</h2>
         <div class="faq-container">
             <div class="faq-item">
                 <div class="faq-question" onclick="toggleFaq(this)">
-                    <span>Can you really help with dark spots?</span> <span>+</span>
+                    <span>How much does treatment cost?</span> <span>+</span>
                 </div>
                 <div class="faq-answer">
-                    <p>Yes. The ad you saw mentions "Dark Spot Solution" because it's one of our specialties. We use advanced topical treatments to reduce pigmentation.</p>
+                    <p>Treatment costs vary depending on your skin condition and personalized plan. Your first consultation is completely free, and we'll give you a clear breakdown of costs before you commit to anything. We offer affordable treatment plans designed to fit your budget.</p>
                 </div>
             </div>
             <div class="faq-item">
                 <div class="faq-question" onclick="toggleFaq(this)">
-                    <span>Can I come in today?</span> <span>+</span>
+                    <span>How many sessions will I need?</span> <span>+</span>
                 </div>
                 <div class="faq-answer">
-                    <p>Yes, we offer same-day appointments on the days we're open:<br><br>
-                    <strong>Monday:</strong> 11:00 AM - 8:00 PM<br><br>
-                    Call us or book online to secure your spot.</p>
+                    <p>Most patients see visible improvement within 2 weeks. The total number of sessions depends on your skin's condition. During your free consultation, we'll outline an estimated treatment timeline so you know what to expect.</p>
                 </div>
             </div>
             <div class="faq-item">
                 <div class="faq-question" onclick="toggleFaq(this)">
-                    <span>Do you use harsh medications?</span> <span>+</span>
+                    <span>Is the treatment painful?</span> <span>+</span>
                 </div>
                 <div class="faq-answer">
-                    <p>No. Our philosophy is "No Harsh Medications." We achieve results with clinical treatments directly on the skin, protecting your overall health.</p>
+                    <p>Our treatments are designed to be comfortable. You may feel mild sensations during extractions, but our experienced team works carefully to minimize any discomfort. Most patients describe the experience as relaxing.</p>
                 </div>
             </div>
             <div class="faq-item">
                 <div class="faq-question" onclick="toggleFaq(this)">
-                    <span>Where are you located?</span> <span>+</span>
+                    <span>Is it safe for sensitive skin?</span> <span>+</span>
                 </div>
                 <div class="faq-answer">
-                    <p>We're in the heart of Santa Ana: 2020 N. Broadway Blvd, Suite 100, Santa Ana, CA 92706.</p>
+                    <p>Yes. Every treatment plan is personalized to your skin type, including sensitive skin. We use no harsh oral medications and our topical treatments are tailored specifically for you. Your skin's safety is our priority.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <span>Do you take insurance?</span> <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>We are a specialized skincare clinic and do not bill insurance directly. However, our treatment plans are competitively priced and we work with you to find a plan that fits your budget. Many patients find our care more affordable than co-pays for repeated dermatologist visits.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <span>What products will I need to use at home?</span> <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Your treatment plan may include recommended at-home products to support your results between visits. These are tailored to your specific skin needs and we'll explain exactly what each product does and why it's part of your plan.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <span>What should I expect at my first visit?</span> <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Your first visit is a free consultation where we assess your skin, discuss your concerns, and create a personalized treatment plan. There's no pressure and no obligation. You'll leave with a clear understanding of what we can do for your skin.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <span>What if I can't make a Monday appointment?</span> <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Our Santa Ana location is open on Mondays from 11:00 AM to 8:00 PM. If Mondays don't work for your schedule, we have multiple locations across Southern California with different availability. <a href="https://www.daisymdcare.com/locations" target="_blank">View all our locations and hours here.</a></p>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- ============ LOCATION ============ -->
     <section class="location-languages">
         <p>2020 N. Broadway Blvd, Suite 100, Santa Ana, CA 92706 | Se habla español</p>
     </section>
 
+    <!-- ============ FINAL CTA ============ -->
     <section class="final-cta-section" id="contact">
-        <h2>Clear your skin fast.</h2>
+        <h2>We don't stop until your skin is clear.</h2>
+        <p class="final-cta-guarantee"><i class="fas fa-shield-halved"></i> Visible results in 2 weeks guaranteed or money back.</p>
         <p>Don't let acne or dark spots take away another day of confidence.</p>
         <div class="cta-buttons">
             <a href="https://www.daisymdcare.com/booking-santa-ana?loc=santa-ana" class="cta-button cta-primary">Book My Free Consultation Now</a>
@@ -1348,7 +1695,7 @@
     </section>
 
     <footer>
-        <p>&copy; 2025 Daisy MD Care. Acne & Dark Spot Treatment in Santa Ana.</p>
+        <p>&copy; 2026 Daisy MD Care. Acne & Dark Spot Treatment in Santa Ana.</p>
         <p style="margin-top: 12px;">2020 N. Broadway Blvd, Suite 100, Santa Ana, CA 92706 | Se habla español</p>
         <p style="margin-top: 12px;">Visit our website: <a href="https://www.daisymdcare.com" style="color: var(--daisy-mint); text-decoration: none;">www.daisymdcare.com</a></p>
     </footer>
@@ -1359,7 +1706,6 @@
             if (typeof fbq !== 'undefined') {
                 fbq('trackCustom', eventName, eventData);
             }
-            console.log('Pixel Event Tracked:', eventName, eventData);
         }
 
         // Track all CTA button clicks
@@ -1368,11 +1714,8 @@
             const heroCtaButton = document.querySelector('.hero-cta');
             if (heroCtaButton) {
                 heroCtaButton.addEventListener('click', function() {
-                    trackPixelEvent('BookConsultation', {
-                        section: 'hero',
-                        timestamp: new Date().toISOString()
-                    });
-                    fbq('track', 'ViewContent');
+                    trackPixelEvent('BookConsultation', { section: 'hero' });
+                    if (typeof fbq !== 'undefined') fbq('track', 'ViewContent');
                 });
             }
 
@@ -1381,97 +1724,70 @@
                 button.addEventListener('click', function() {
                     const buttonType = this.classList.contains('cta-primary') ? 'primary' : 'secondary';
                     const buttonText = this.textContent.trim();
-
                     if (buttonText.includes('Book')) {
-                        trackPixelEvent('BookConsultation', {
-                            section: 'final-cta',
-                            buttonType: buttonType,
-                            timestamp: new Date().toISOString()
-                        });
-                        fbq('track', 'ViewContent');
+                        trackPixelEvent('BookConsultation', { section: 'final-cta', buttonType: buttonType });
+                        if (typeof fbq !== 'undefined') fbq('track', 'ViewContent');
                     } else if (buttonText.includes('Call')) {
-                        trackPixelEvent('PhoneCall', {
-                            section: 'final-cta',
-                            timestamp: new Date().toISOString()
-                        });
-                        fbq('track', 'Contact');
+                        trackPixelEvent('PhoneCall', { section: 'final-cta' });
+                        if (typeof fbq !== 'undefined') fbq('track', 'Contact');
                     }
                 });
             });
 
             // Video CTA button
-            const videoCta = document.querySelector('.video-cta-button');
+            var videoCta = document.querySelector('.video-cta-button');
             if (videoCta) {
                 videoCta.addEventListener('click', function() {
-                    trackPixelEvent('BookConsultation', {
-                        section: 'video-testimonial',
-                        timestamp: new Date().toISOString()
-                    });
-                    fbq('track', 'ViewContent');
+                    trackPixelEvent('BookConsultation', { section: 'video-testimonial' });
+                    if (typeof fbq !== 'undefined') fbq('track', 'ViewContent');
+                });
+            }
+
+            // Proof CTA button
+            var proofCta = document.querySelector('.proof-cta a');
+            if (proofCta) {
+                proofCta.addEventListener('click', function() {
+                    trackPixelEvent('BookConsultation', { section: 'proof-timeline' });
+                    if (typeof fbq !== 'undefined') fbq('track', 'ViewContent');
+                });
+            }
+
+            // Mid-page CTA
+            var midCta = document.querySelector('.mid-cta a');
+            if (midCta) {
+                midCta.addEventListener('click', function() {
+                    trackPixelEvent('BookConsultation', { section: 'mid-page' });
+                    if (typeof fbq !== 'undefined') fbq('track', 'ViewContent');
                 });
             }
 
             // Track section scrolls
-            const sections = document.querySelectorAll('section');
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
+            var sections = document.querySelectorAll('section');
+            var observer = new IntersectionObserver(function(entries) {
+                entries.forEach(function(entry) {
                     if (entry.isIntersecting && !entry.target.dataset.tracked) {
-                        const sectionClass = entry.target.className;
-                        trackPixelEvent('SectionView', {
-                            section: sectionClass,
-                            timestamp: new Date().toISOString()
-                        });
+                        trackPixelEvent('SectionView', { section: entry.target.className });
                         entry.target.dataset.tracked = 'true';
                     }
                 });
             }, { threshold: 0.3 });
-
-            sections.forEach(section => observer.observe(section));
+            sections.forEach(function(section) { observer.observe(section); });
 
             // Track FAQ interactions
-            document.querySelectorAll('.faq-question').forEach(question => {
+            document.querySelectorAll('.faq-question').forEach(function(question) {
                 question.addEventListener('click', function() {
-                    const questionText = this.querySelector('span').textContent.trim();
-                    trackPixelEvent('FAQExpand', {
-                        question: questionText,
-                        timestamp: new Date().toISOString()
-                    });
+                    trackPixelEvent('FAQExpand', { question: this.querySelector('span').textContent.trim() });
                 });
             });
-
-            // Track gallery/before-after views
-            document.querySelectorAll('.gallery-card').forEach((card, index) => {
-                card.addEventListener('mouseenter', function() {
-                    trackPixelEvent('GalleryView', {
-                        imageIndex: index + 1,
-                        timestamp: new Date().toISOString()
-                    });
-                });
-            });
-
-            // Track time on page
-            let timeOnPage = 0;
-            setInterval(() => {
-                timeOnPage += 10;
-                if (timeOnPage % 60000 === 0) {
-                    trackPixelEvent('TimeOnPage', {
-                        seconds: timeOnPage / 1000,
-                        timestamp: new Date().toISOString()
-                    });
-                }
-            }, 10000);
 
             // Track scroll depth
-            let maxScroll = 0;
+            var maxScroll = 0;
             window.addEventListener('scroll', function() {
-                const scrollPercent = Math.round((window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100);
+                var scrollPercent = Math.round((window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100);
                 if (scrollPercent > maxScroll) {
                     maxScroll = scrollPercent;
                     if (scrollPercent === 50 || scrollPercent === 75 || scrollPercent === 100) {
-                        trackPixelEvent('ScrollDepth', {
-                            depth: scrollPercent + '%',
-                            timestamp: new Date().toISOString()
-                        });
+                        trackPixelEvent('ScrollDepth', { depth: scrollPercent + '%' });
                     }
                 }
             });
@@ -1479,20 +1795,16 @@
 
         // Video Testimonial Play/Pause
         function playTestimonial() {
-            const video = document.getElementById('testimonialVideo');
-            const overlay = document.getElementById('videoOverlay');
+            var video = document.getElementById('testimonialVideo');
+            var overlay = document.getElementById('videoOverlay');
             video.play();
             overlay.classList.add('hidden');
-            trackPixelEvent('VideoTestimonialPlay', {
-                section: 'video-testimonial',
-                timestamp: new Date().toISOString()
-            });
+            trackPixelEvent('VideoTestimonialPlay', { section: 'video-testimonial' });
         }
 
-        // Pause shows overlay again
         document.addEventListener('DOMContentLoaded', function() {
-            const video = document.getElementById('testimonialVideo');
-            const overlay = document.getElementById('videoOverlay');
+            var video = document.getElementById('testimonialVideo');
+            var overlay = document.getElementById('videoOverlay');
             if (video && overlay) {
                 video.addEventListener('click', function() {
                     if (video.paused) {
@@ -1505,20 +1817,17 @@
                 });
                 video.addEventListener('ended', function() {
                     overlay.classList.remove('hidden');
-                    trackPixelEvent('VideoTestimonialComplete', {
-                        section: 'video-testimonial',
-                        timestamp: new Date().toISOString()
-                    });
+                    trackPixelEvent('VideoTestimonialComplete', { section: 'video-testimonial' });
                 });
             }
         });
 
         // FAQ toggle function
         function toggleFaq(element) {
-            const answer = element.nextElementSibling;
-            const isActive = answer.classList.contains('active');
+            var answer = element.nextElementSibling;
+            var isActive = answer.classList.contains('active');
 
-            document.querySelectorAll('.faq-answer').forEach(item => {
+            document.querySelectorAll('.faq-answer').forEach(function(item) {
                 item.classList.remove('active');
                 item.parentElement.querySelector('.faq-question span:last-child').textContent = '+';
             });
