@@ -747,6 +747,200 @@
             font-size: 0.9rem;
         }
 
+        /* Video Testimonial Section */
+        .video-testimonial-section {
+            background: linear-gradient(135deg, var(--daisy-teal-dark) 0%, var(--daisy-teal) 100%);
+            padding: var(--space-3xl) var(--space-lg);
+            text-align: center;
+            color: var(--white);
+        }
+
+        .video-testimonial-section h2 {
+            font-size: 1.8rem;
+            color: var(--white);
+            margin-bottom: var(--space-sm);
+        }
+
+        .video-testimonial-subtitle {
+            font-size: 1rem;
+            color: rgba(255, 255, 255, 0.85);
+            margin-bottom: var(--space-xl);
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.6;
+        }
+
+        .video-wrapper {
+            position: relative;
+            max-width: 480px;
+            margin: 0 auto var(--space-xl);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+            aspect-ratio: 1 / 1;
+            background: #000;
+        }
+
+        .video-wrapper video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .video-play-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: rgba(0, 0, 0, 0.35);
+            cursor: pointer;
+            transition: background 0.3s;
+            z-index: 2;
+        }
+
+        .video-play-overlay:hover {
+            background: rgba(0, 0, 0, 0.25);
+        }
+
+        .video-play-overlay.hidden {
+            display: none;
+        }
+
+        .play-button-circle {
+            width: 72px;
+            height: 72px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: var(--space-sm);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s;
+        }
+
+        .video-play-overlay:hover .play-button-circle {
+            transform: scale(1.1);
+        }
+
+        .play-button-circle i {
+            font-size: 1.8rem;
+            color: var(--daisy-teal);
+            margin-left: 4px;
+        }
+
+        .play-label {
+            color: var(--white);
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .testimonial-quote-highlight {
+            max-width: 520px;
+            margin: 0 auto var(--space-xl);
+            font-size: 1.05rem;
+            font-style: italic;
+            line-height: 1.7;
+            color: rgba(255, 255, 255, 0.92);
+            position: relative;
+            padding: 0 var(--space-lg);
+        }
+
+        .testimonial-quote-highlight::before {
+            content: '\201C';
+            font-size: 3.5rem;
+            color: var(--gold);
+            position: absolute;
+            top: -20px;
+            left: 0;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+
+        .testimonial-quote-name {
+            font-style: normal;
+            font-weight: 600;
+            color: var(--gold-light);
+            display: block;
+            margin-top: var(--space-sm);
+            font-size: 0.9rem;
+        }
+
+        .video-cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--gold) 0%, var(--gold-dark) 100%);
+            color: #1a1a1a;
+            padding: 16px 40px;
+            font-size: 1rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 8px 24px rgba(212, 175, 55, 0.3);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .video-cta-button:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 32px rgba(212, 175, 55, 0.5);
+        }
+
+        @media (min-width: 769px) {
+            .video-testimonial-section {
+                padding: var(--space-4xl) var(--space-xl);
+            }
+
+            .video-testimonial-section h2 {
+                font-size: 2.2rem;
+            }
+
+            .video-wrapper {
+                max-width: 420px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .video-testimonial-section h2 {
+                font-size: 1.5rem;
+            }
+
+            .video-wrapper {
+                border-radius: 12px;
+                margin-left: -4px;
+                margin-right: -4px;
+            }
+
+            .play-button-circle {
+                width: 64px;
+                height: 64px;
+            }
+
+            .play-button-circle i {
+                font-size: 1.5rem;
+            }
+
+            .testimonial-quote-highlight {
+                font-size: 0.95rem;
+                padding: 0 var(--space-md);
+            }
+
+            .video-cta-button {
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+
         @media (max-width: 1024px) {
             .hero h1 {
                 font-size: 2.2rem;
@@ -817,7 +1011,8 @@
             .expertise-section,
             .process-section,
             .faq-section,
-            .final-cta-section {
+            .final-cta-section,
+            .video-testimonial-section {
                 padding: var(--space-3xl) var(--space-lg);
             }
 
@@ -832,7 +1027,8 @@
             .expertise-section h2,
             .process-section h2,
             .faq-section h2,
-            .final-cta-section h2 {
+            .final-cta-section h2,
+            .video-testimonial-section h2 {
                 font-size: 1.6rem;
             }
 
@@ -862,7 +1058,8 @@
             .testimonials-section h2,
             .expertise-section h2,
             .process-section h2,
-            .faq-section h2 {
+            .faq-section h2,
+            .video-testimonial-section h2 {
                 font-size: 1.4rem;
             }
 
@@ -943,6 +1140,36 @@
                 <div class="gallery-label">Lasting Results</div>
             </div>
         </div>
+    </section>
+
+    <section class="video-testimonial-section">
+        <h2>Hear a Real Patient's Story</h2>
+        <p class="video-testimonial-subtitle">She tried everything. Then she found Daisy MD Care.</p>
+
+        <div class="video-wrapper">
+            <video
+                id="testimonialVideo"
+                poster="public/video/testimonial-poster.jpg"
+                preload="metadata"
+                playsinline
+                webkit-playsinline
+            >
+                <source src="public/video/patient-testimonial.mp4" type="video/mp4">
+            </video>
+            <div class="video-play-overlay" id="videoOverlay" onclick="playTestimonial()">
+                <div class="play-button-circle">
+                    <i class="fas fa-play"></i>
+                </div>
+                <span class="play-label">Watch Her Journey</span>
+            </div>
+        </div>
+
+        <div class="testimonial-quote-highlight">
+            Self-esteem has went up through the roof. I am smiling, Kool-Aid face cheesing, compliments galore... even my marriage has went through the roof.
+            <span class="testimonial-quote-name">- Real Daisy MD Care Patient</span>
+        </div>
+
+        <a href="https://www.daisymdcare.com/booking-santa-ana" class="video-cta-button">Start Your Transformation</a>
     </section>
 
     <section class="why-us-section">
@@ -1127,6 +1354,165 @@
     </footer>
 
     <script>
+        // Meta Pixel Custom Events Tracking
+        function trackPixelEvent(eventName, eventData = {}) {
+            if (typeof fbq !== 'undefined') {
+                fbq('trackCustom', eventName, eventData);
+            }
+            console.log('Pixel Event Tracked:', eventName, eventData);
+        }
+
+        // Track all CTA button clicks
+        document.addEventListener('DOMContentLoaded', function() {
+            // Hero CTA button
+            const heroCtaButton = document.querySelector('.hero-cta');
+            if (heroCtaButton) {
+                heroCtaButton.addEventListener('click', function() {
+                    trackPixelEvent('BookConsultation', {
+                        section: 'hero',
+                        timestamp: new Date().toISOString()
+                    });
+                    fbq('track', 'ViewContent');
+                });
+            }
+
+            // Final CTA buttons
+            document.querySelectorAll('.cta-button').forEach(button => {
+                button.addEventListener('click', function() {
+                    const buttonType = this.classList.contains('cta-primary') ? 'primary' : 'secondary';
+                    const buttonText = this.textContent.trim();
+
+                    if (buttonText.includes('Book')) {
+                        trackPixelEvent('BookConsultation', {
+                            section: 'final-cta',
+                            buttonType: buttonType,
+                            timestamp: new Date().toISOString()
+                        });
+                        fbq('track', 'ViewContent');
+                    } else if (buttonText.includes('Call')) {
+                        trackPixelEvent('PhoneCall', {
+                            section: 'final-cta',
+                            timestamp: new Date().toISOString()
+                        });
+                        fbq('track', 'Contact');
+                    }
+                });
+            });
+
+            // Video CTA button
+            const videoCta = document.querySelector('.video-cta-button');
+            if (videoCta) {
+                videoCta.addEventListener('click', function() {
+                    trackPixelEvent('BookConsultation', {
+                        section: 'video-testimonial',
+                        timestamp: new Date().toISOString()
+                    });
+                    fbq('track', 'ViewContent');
+                });
+            }
+
+            // Track section scrolls
+            const sections = document.querySelectorAll('section');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting && !entry.target.dataset.tracked) {
+                        const sectionClass = entry.target.className;
+                        trackPixelEvent('SectionView', {
+                            section: sectionClass,
+                            timestamp: new Date().toISOString()
+                        });
+                        entry.target.dataset.tracked = 'true';
+                    }
+                });
+            }, { threshold: 0.3 });
+
+            sections.forEach(section => observer.observe(section));
+
+            // Track FAQ interactions
+            document.querySelectorAll('.faq-question').forEach(question => {
+                question.addEventListener('click', function() {
+                    const questionText = this.querySelector('span').textContent.trim();
+                    trackPixelEvent('FAQExpand', {
+                        question: questionText,
+                        timestamp: new Date().toISOString()
+                    });
+                });
+            });
+
+            // Track gallery/before-after views
+            document.querySelectorAll('.gallery-card').forEach((card, index) => {
+                card.addEventListener('mouseenter', function() {
+                    trackPixelEvent('GalleryView', {
+                        imageIndex: index + 1,
+                        timestamp: new Date().toISOString()
+                    });
+                });
+            });
+
+            // Track time on page
+            let timeOnPage = 0;
+            setInterval(() => {
+                timeOnPage += 10;
+                if (timeOnPage % 60000 === 0) {
+                    trackPixelEvent('TimeOnPage', {
+                        seconds: timeOnPage / 1000,
+                        timestamp: new Date().toISOString()
+                    });
+                }
+            }, 10000);
+
+            // Track scroll depth
+            let maxScroll = 0;
+            window.addEventListener('scroll', function() {
+                const scrollPercent = Math.round((window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100);
+                if (scrollPercent > maxScroll) {
+                    maxScroll = scrollPercent;
+                    if (scrollPercent === 50 || scrollPercent === 75 || scrollPercent === 100) {
+                        trackPixelEvent('ScrollDepth', {
+                            depth: scrollPercent + '%',
+                            timestamp: new Date().toISOString()
+                        });
+                    }
+                }
+            });
+        });
+
+        // Video Testimonial Play/Pause
+        function playTestimonial() {
+            const video = document.getElementById('testimonialVideo');
+            const overlay = document.getElementById('videoOverlay');
+            video.play();
+            overlay.classList.add('hidden');
+            trackPixelEvent('VideoTestimonialPlay', {
+                section: 'video-testimonial',
+                timestamp: new Date().toISOString()
+            });
+        }
+
+        // Pause shows overlay again
+        document.addEventListener('DOMContentLoaded', function() {
+            const video = document.getElementById('testimonialVideo');
+            const overlay = document.getElementById('videoOverlay');
+            if (video && overlay) {
+                video.addEventListener('click', function() {
+                    if (video.paused) {
+                        video.play();
+                        overlay.classList.add('hidden');
+                    } else {
+                        video.pause();
+                        overlay.classList.remove('hidden');
+                    }
+                });
+                video.addEventListener('ended', function() {
+                    overlay.classList.remove('hidden');
+                    trackPixelEvent('VideoTestimonialComplete', {
+                        section: 'video-testimonial',
+                        timestamp: new Date().toISOString()
+                    });
+                });
+            }
+        });
+
         // FAQ toggle function
         function toggleFaq(element) {
             const answer = element.nextElementSibling;
